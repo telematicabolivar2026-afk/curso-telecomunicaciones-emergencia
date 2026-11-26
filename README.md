@@ -1,39 +1,51 @@
-# 📘 Curso de Telecomunicaciones de Emergencia
+---
+title: Módulo 1 - Fundamentos
+---
 
-**Dirigido a Radioaficionados y Voluntarios de la Cruz Roja Colombiana, con especialidad en Telemática Nivel II (Radio Operadores/as de CITEL).**
+# Módulo 1: Fundamentos de las Telecomunicaciones de Emergencia
 
-*Basado en la Guía para Telecomunicaciones de Emergencia de la IARU (Edición Revisada 2016)*
+**Carga horaria estimada:** 4 horas
 
-Bienvenido al **Curso de Telecomunicaciones de Emergencia**. Este es un espacio de formación diseñado para capacitar a los radioaficionados y a los voluntarios de la Cruz Roja Colombiana en la intervención eficaz, profesional y segura en situaciones de crisis y desastres, utilizando la radioafición como herramienta principal.
-
-El curso es **100% en línea, asincrónico y autoasistido**, lo que significa que podrás avanzar a tu propio ritmo, sin horarios fijos y sin la necesidad de un tutor en tiempo real.
+## 🎯 Objetivos del Módulo
+*   Comprender qué es una emergencia de comunicación.
+*   Identificar el perfil y los límites del voluntario.
+*   Diferenciar la radioafición como hobby de las comunicaciones de emergencia.
 
 ---
 
-## 🎯 ¿Qué vas a aprender?
-Al finalizar este curso, serás capaz de:
-1. Comprender el rol del radioaficionado en emergencias y reconocer tus límites operativos.
-2. Operar eficazmente en redes de emergencia dirigidas bajo estándares internacionales.
-3. Manejar mensajes formales y tráfico de emergencia con precisión.
-4. Integrarte a un Sistema de Comando de Incidentes (SCI) en el rol de comunicaciones.
-5. Preparar tu estación, equipo y logística personal para un despliegue.
-6. Adoptar una actitud profesional y de servicio ante las agencias y el público.
+## 📖 Contenido Teórico
+
+### 1. ¿Qué es una emergencia de comunicación?
+Una emergencia de comunicación se produce cuando un fallo crítico del sistema pone al público en riesgo. Las tormentas, terremotos, o incluso la simple saturación de las redes celulares (diseñadas para soportar solo un 10% de uso simultáneo) pueden desencadenarla.
+
+### 2. ¿Qué hace un buen voluntario?
+Los voluntarios provienen de ámbitos diversos. Los atributos que comparten son el deseo de ayudar sin beneficio personal, la capacidad de trabajar en equipo y la habilidad de pensar bajo presión. **Tu familia es siempre la primera prioridad**; asegúrate de tener tu situación personal bajo control antes de ayudar a otros.
+
+### 3. Lo que Ud. "NO es"
+Es tan importante saber qué hacer como saber qué **no** hacer:
+*   **No es la "primera respuesta":** No necesitas sirenas ni luces.
+*   **No tiene autoridad:** No puedes tomar decisiones por otros.
+*   **No puede hacerlo todo:** No eres médico, bombero o policía. Tu trabajo es comunicar.
+*   **No está a cargo:** Estás allí para satisfacer las necesidades de comunicación de la agencia.
+
+### 4. La comunicación, tarea #1
+Tu trabajo es **comunicar**. Si la agencia te pide entregar una lista y la radio falla, usa el teléfono, el fax o señales de humo si es necesario. Lo importante es que el mensaje llegue.
 
 ---
 
-## 📋 Requisitos
-*   **Ser Radioaficionado o Voluntario de la Cruz Roja Colombiana con especialidad en Telemática Nivel II (Radio Operadores/as de CITEL - Central de Información y Telecomunicaciones).**
-*   Licencia de radioaficionado vigente (para el personal que aplique).
-*   Acceso a un equipo de radio básico.
-*   Conexión a internet.
-*   **Actitud de compromiso y servicio.**
+## 🎮 Actividad Práctica Interactiva
+
+*(A continuación, pon a prueba tus conocimientos con esta actividad interactiva. H5P)*
+
+<iframe src="https://telematicabolivar2026.h5p.com/content/1293071465644464468/embed" aria-label="M1 - Evaluación de Fundamentos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://telematicabolivar2026.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
 
 ---
 
-## 🗺️ ¿Cómo navegar este curso?
-El curso está dividido en **12 módulos (del 0 al 11)**. Te recomendamos seguirlos en orden, ya que cada uno construye sobre los conocimientos del anterior.
+## 📝 Evaluación del Módulo (Calificable)
 
-👉 **[Haz clic aquí para ver el Programa y Cronograma completo](programa.md)**
+Para completar este módulo, debes realizar la siguiente evaluación. Al finalizar, recibirás tu calificación automáticamente.
+
+👉 **[Haz clic aquí para realizar la Evaluación del Módulo 1](AQUI_PEGAREMOS_EL_ENLACE_DE_GOOGLE_FORMS)**
 
 ---
-*Este material es una adaptación basada en la Guía para Telecomunicaciones de Emergencia de la IARU. Puede ser reproducido sin editar, con el reconocimiento correspondiente a la Unión Internacional de Radioaficionados (IARU).*
+[⬅️ Volver a la Página de Inicio](README.md) | [Siguiente Módulo ➡️](modulo-2.md)

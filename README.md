@@ -1,6 +1,6 @@
 # 📘 Curso de Telecomunicaciones de Emergencia
 
-**Dirigido a Radioaficionados y Voluntarios de la Cruz Roja Colombiana (Seccional Bolívar) con especialidad en Telemática Nivel II (Radio Operadores/as de CITEL).**
+**Dirigido a Radioaficionados y Voluntarios de la Cruz Roja Colombiana, con especialidad en Telemática Nivel II (Radio Operadores/as de CITEL).**
 
 *Basado en la Guía para Telecomunicaciones de Emergencia de la IARU (Edición Revisada 2016)*
 

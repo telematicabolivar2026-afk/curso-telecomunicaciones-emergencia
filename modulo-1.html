@@ -1,42 +1,125 @@
-# Módulo 1: Fundamentos de las Telecomunicaciones de Emergencia
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1 - Fundamentos | Curso de Emergencias</title>
+    <style>
+        :root {
+            --rojo-cr: #b30000;
+            --rojo-oscuro: #8a0000;
+            --verde: #2e7d32;
+            --gris-claro: #f4f6f8;
+            --texto: #333;
+            --blanco: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Times New Roman', Times, serif; background: var(--gris-claro); color: var(--texto); line-height: 1.6; }
+        
+        header { background: var(--blanco); padding: 15px 40px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex-wrap: wrap; gap: 15px; }
+        .header-logos { display: flex; align-items: center; gap: 20px; }
+        .header-logos img { height: 60px; width: auto; }
+        .header-titulo { text-align: center; flex-grow: 1; }
+        .header-titulo h1 { color: var(--rojo-cr); font-size: 1.5rem; margin-bottom: 5px; }
+        .header-titulo p { font-size: 0.9rem; color: #666; }
+        
+        .contenedor { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
+        .contenido-modulo { background: var(--blanco); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--rojo-cr); margin-bottom: 30px; }
+        .contenido-modulo h2 { color: var(--rojo-cr); font-size: 1.8rem; margin-bottom: 10px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .contenido-modulo h3 { color: var(--rojo-cr); font-size: 1.4rem; margin: 25px 0 15px 0; }
+        .contenido-modulo p { margin-bottom: 15px; font-size: 1.1rem; text-align: justify; }
+        .contenido-modulo ul { margin-bottom: 15px; padding-left: 40px; font-size: 1.1rem; }
+        .contenido-modulo li { margin-bottom: 8px; }
+        
+        .caja-objetivos { background: #fff9e6; padding: 20px; border-radius: 8px; border-left: 5px solid #f9a825; margin-bottom: 30px; }
+        .caja-objetivos h3 { color: var(--rojo-cr); margin-top: 0; font-size: 1.2rem; }
+        .caja-objetivos ul { list-style-type: none; padding-left: 0; margin-bottom: 0; }
+        .caja-objetivos li { position: relative; padding-left: 25px; margin-bottom: 8px; }
+        .caja-objetivos li::before { content: "✔"; position: absolute; left: 0; color: var(--verde); font-weight: bold; }
 
-**Carga horaria estimada:** 4 horas
+        .botones-nav { display: flex; justify-content: space-between; margin-top: 30px; }
+        .btn { background: var(--rojo-cr); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; display: inline-block; }
+        .btn:hover { background: var(--rojo-oscuro); }
+        .btn-gris { background: #666; }
+        .btn-gris:hover { background: #444; }
+        
+        footer { background: #222; color: #ccc; text-align: center; padding: 25px; font-size: 0.9rem; margin-top: 50px; }
+        footer strong { color: var(--blanco); }
+    </style>
+</head>
+<body>
 
-## 🎯 Objetivos del Módulo
-*   Comprender qué es una emergencia de comunicación.
-*   Identificar el perfil y los límites del voluntario.
-*   Diferenciar la radioafición como hobby de las comunicaciones de emergencia.
+    <header>
+        <div class="header-logos">
+            <img src="img/logo-cruz-roja.png" alt="Cruz Roja Colombiana">
+        </div>
+        <div class="header-titulo">
+            <h1>Curso de Telecomunicaciones de Emergencia</h1>
+            <p>Radioaficionados y Telemática Nivel II | Cruz Roja Colombiana Seccional Bolívar</p>
+        </div>
+        <div class="header-logos">
+            <img src="img/logo-telematica.png" alt="Telemática Seccional Bolívar">
+        </div>
+    </header>
 
----
+    <main class="contenedor">
+        <div class="contenido-modulo">
+            <h2>Módulo 1: Fundamentos de las Telecomunicaciones de Emergencia</h2>
+            <p><strong>Carga horaria estimada:</strong> 4 horas</p>
 
-## 📖 Contenido Teórico
+            <div class="caja-objetivos">
+                <h3>🎯 Objetivos del Módulo</h3>
+                <ul>
+                    <li>Comprender qué es una emergencia de comunicación.</li>
+                    <li>Identificar el perfil y los límites del voluntario.</li>
+                    <li>Diferenciar la radioafición como hobby de las comunicaciones de emergencia.</li>
+                </ul>
+            </div>
 
-### 1. ¿Qué es una emergencia de comunicación?
-Una emergencia de comunicación se produce cuando un fallo crítico del sistema pone al público en riesgo. Las tormentas, terremotos, o incluso la simple saturación de las redes celulares (diseñadas para soportar solo un 10% de uso simultáneo) pueden desencadenarla.
+            <h3>1. ¿Qué es una emergencia de comunicación?</h3>
+            <p>Una emergencia de comunicación se produce cuando un fallo crítico del sistema pone al público en riesgo. Las tormentas, terremotos, o incluso la simple saturación de las redes celulares (diseñadas para soportar solo un 10% de uso simultáneo) pueden desencadenarla.</p>
 
-### 2. ¿Qué hace un buen voluntario?
-Los voluntarios provienen de ámbitos diversos. Los atributos que comparten son el deseo de ayudar sin beneficio personal, la capacidad de trabajar en equipo y la habilidad de pensar bajo presión. **Tu familia es siempre la primera prioridad**; asegúrate de tener tu situación personal bajo control antes de ayudar a otros.
+            <h3>2. ¿Qué hace un buen voluntario?</h3>
+            <p>Los voluntarios provienen de ámbitos diversos. Los atributos que comparten son el deseo de ayudar sin beneficio personal, la capacidad de trabajar en equipo y la habilidad de pensar bajo presión. <strong>Tu familia es siempre la primera prioridad</strong>; asegúrate de tener tu situación personal bajo control antes de ayudar a otros.</p>
 
-### 3. Lo que Ud. "NO es"
-Es tan importante saber qué hacer como saber qué **no** hacer:
-*   **No es la "primera respuesta":** No necesitas sirenas ni luces.
-*   **No tiene autoridad:** No puedes tomar decisiones por otros.
-*   **No puede hacerlo todo:** No eres médico, bombero o policía. Tu trabajo es comunicar.
-*   **No está a cargo:** Estás allí para satisfacer las necesidades de comunicación de la agencia.
+            <h3>3. Lo que Ud. "NO es"</h3>
+            <p>Es tan importante saber qué hacer como saber qué <strong>no</strong> hacer:</p>
+            <ul>
+                <li><strong>No es la "primera respuesta":</strong> No necesitas sirenas ni luces.</li>
+                <li><strong>No tiene autoridad:</strong> No puedes tomar decisiones por otros.</li>
+                <li><strong>No puede hacerlo todo:</strong> No eres médico, bombero o policía. Tu trabajo es comunicar.</li>
+                <li><strong>No está a cargo:</strong> Estás allí para satisfacer las necesidades de comunicación de la agencia.</li>
+            </ul>
 
-### 4. La comunicación, tarea #1
-Tu trabajo es **comunicar**. Si la agencia te pide entregar una lista y la radio falla, usa el teléfono, el fax o señales de humo si es necesario. Lo importante es que el mensaje llegue.
+            <h3>4. La comunicación, tarea #1</h3>
+            <p>Tu trabajo es <strong>comunicar</strong>. Si la agencia te pide entregar una lista y la radio falla, usa el teléfono, el fax o señales de humo si es necesario. Lo importante es que el mensaje llegue.</p>
 
----
+            <hr style="margin: 30px 0; border: 1px solid #eee;">
 
-## 🎮 Actividad Práctica Interactiva
+            <h3>🎮 Actividad Práctica Interactiva</h3>
+            <p>A continuación, pon a prueba tus conocimientos con esta actividad interactiva de H5P:</p>
+            
+            <!-- CÓDIGO H5P -->
+            <iframe src="https://telematicabolivar2026.h5p.com/content/1293071465644464468/embed" aria-label="M1 - Evaluación de Fundamentos" width="100%" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://telematicabolivar2026.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
 
-<iframe src="https://telematicabolivar2026.h5p.com/content/1293071465644464468/embed" aria-label="M1 - Evaluación de Fundamentos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://telematicabolivar2026.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+            <hr style="margin: 30px 0; border: 1px solid #eee;">
 
----
+            <h3>📝 Evaluación del Módulo (Calificable)</h3>
+            <p>Para completar este módulo y guardar tu progreso, debes realizar la siguiente evaluación en Google Forms:</p>
+            <p><a href="AQUI_PEGAREMOS_EL_ENLACE_DE_GOOGLE_FORMS" class="btn" target="_blank">Ir a la Evaluación Oficial</a></p>
 
-## 📝 Evaluación del Módulo
-*Próximamente se habilitará el cuestionario de Google Forms.*
+            <div class="botones-nav">
+                <a href="index.html" class="btn btn-gris">⬅️ Volver al Inicio</a>
+                <a href="#" class="btn">Siguiente Módulo ➡️</a>
+            </div>
+        </div>
+    </main>
 
----
-[⬅️ Volver a la Página de Inicio](README.md) | [Siguiente Módulo ➡️](modulo-2.md)
+    <footer>
+        <p>&copy; 2026 <strong>Cruz Roja Colombiana - Seccional Bolívar</strong> | Curso de Telecomunicaciones de Emergencia</p>
+        <p>Basado en la Guía IARU Región 2 | Desarrollado por el Área de Telemática</p>
+    </footer>
+
+</body>
+</html>

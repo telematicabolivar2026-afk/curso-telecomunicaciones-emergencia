@@ -22,9 +22,20 @@
         .header-titulo h1 { color: var(--rojo-cr); font-size: 1.5rem; margin-bottom: 5px; }
         .header-titulo p { font-size: 0.9rem; color: #666; }
         .contenedor { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Estilos mejorados para la bienvenida */
         .bienvenida { background: var(--blanco); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; margin-bottom: 50px; border-top: 5px solid var(--rojo-cr); }
-        .bienvenida h2 { color: var(--rojo-cr); margin-bottom: 15px; }
-        .bienvenida p { max-width: 800px; margin: 0 auto 20px auto; font-size: 1.1rem; }
+        .bienvenida h2 { color: var(--rojo-cr); margin-bottom: 15px; font-size: 2rem; }
+        .bienvenida p { max-width: 850px; margin: 0 auto 15px auto; font-size: 1.1rem; }
+        .bienvenida .subtitulo { color: #666; font-style: italic; margin-bottom: 25px; }
+        
+        /* Lista de objetivos bonita */
+        .objetivos { background: #fff9e6; padding: 20px 40px; border-radius: 8px; text-align: left; max-width: 800px; margin: 20px auto; border-left: 5px solid #f9a825; }
+        .objetivos h3 { color: var(--rojo-cr); margin-bottom: 10px; text-align: center; font-size: 1.3rem; }
+        .objetivos ul { list-style-type: none; padding-left: 0; }
+        .objetivos li { margin-bottom: 8px; font-size: 1.05rem; position: relative; padding-left: 25px; }
+        .objetivos li::before { content: "✔"; position: absolute; left: 0; color: var(--verde); font-weight: bold; }
+
         .titulo-seccion { text-align: center; color: var(--rojo-cr); font-size: 1.8rem; margin-bottom: 30px; }
         .grid-modulos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
         .tarjeta-modulo { background: var(--blanco); padding: 30px; border-radius: 10px; text-decoration: none; color: var(--texto); box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; border-left: 6px solid var(--rojo-cr); position: relative; display: block;}
@@ -57,10 +68,8 @@
         footer strong { color: var(--blanco); }
     </style>
 
-    <!-- 🔥 Firebase (Asegúrate de tener el archivo en la carpeta js) -->
     <script src="js/firebase-progress.js"></script>
 
-    <!-- 📊 GoatCounter (Opcional, para contar visitas) -->
     <script data-goatcounter="https://telematicabolivar.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -68,7 +77,6 @@
 
     <header>
         <div class="header-logos">
-            <!-- Asegúrate de tener la imagen en la carpeta img -->
             <img src="img/logo-cruz-roja.png" alt="Cruz Roja Colombiana">
         </div>
         <div class="header-titulo">
@@ -83,16 +91,32 @@
     <main class="contenedor">
 
         <section class="bienvenida">
-            <h2>¡Bienvenido al curso!</h2>
-            <p>Este espacio de formación está diseñado para capacitar a radioaficionados y voluntarios en la intervención eficaz, profesional y segura en situaciones de crisis y desastres.</p>
-            <p>A continuación, encontrarás los módulos del curso. Te invitamos a completarlos en orden.</p>
-            <p><strong>Basado en la Guía para Telecomunicaciones de Emergencia de la IARU.</strong></p>
+            <h2>¡Bienvenido al Curso!</h2>
+            <p class="subtitulo">Basado en la Guía para Telecomunicaciones de Emergencia de la IARU (Edición Revisada 2016)</p>
+            
+            <p>Este es un espacio de formación diseñado para capacitar a los radioaficionados y a los voluntarios de la Cruz Roja Colombiana en la intervención eficaz, profesional y segura en situaciones de crisis y desastres, utilizando la radioafición como herramienta principal.</p>
+            
+            <p>El curso es <strong>100% en línea, asincrónico y autoasistido</strong>, lo que significa que podrás avanzar a tu propio ritmo, sin horarios fijos y sin la necesidad de un tutor en tiempo real.</p>
+
+            <div class="objetivos">
+                <h3>🎯 ¿Qué vas a aprender?</h3>
+                <ul>
+                    <li>Comprender el rol del radioaficionado en emergencias y reconocer tus límites operativos.</li>
+                    <li>Operar eficazmente en redes de emergencia dirigidas bajo estándares internacionales.</li>
+                    <li>Manejar mensajes formales y tráfico de emergencia con precisión.</li>
+                    <li>Integrarte a un Sistema de Comando de Incidentes (SCI) en el rol de comunicaciones.</li>
+                    <li>Preparar tu estación, equipo y logística personal para un despliegue.</li>
+                    <li>Adoptar una actitud profesional y de servicio ante las agencias y el público.</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 25px;"><strong>Requisitos:</strong> Ser Radioaficionado o Voluntario de la Cruz Roja con especialidad en Telemática Nivel II (CITEL).</p>
         </section>
 
         <section class="panel-registro" id="panelRegistro">
             <h3>📋 Identifícate para guardar tu progreso</h3>
             <p>Ingresa tu número de Cédula de Ciudadanía para guardar tu avance del curso.</p>
-            <input type="text" id="inputCarnet" placeholder="Ej: 12345678" maxlength="20">
+            <input type="text" id="inputCarnet" placeholder="Ej: 1045678900" maxlength="20">
             <br>
             <button onclick="registrarCarnet()">Guardar mi Cédula</button>
             <div class="info-carnet" id="infoCarnet" style="display:none;"></div>
@@ -107,7 +131,7 @@
                 <h3>Fundamentos de las Telecomunicaciones</h3>
                 <p>El rol del voluntario, sobrecarga de sistemas y los límites de la actuación.</p>
             </a>
-            <!-- Puedes ir agregando los demás módulos aquí copiando este bloque <a> -->
+            <!-- Aquí irás agregando los demás módulos copiando el bloque de arriba -->
         </section>
 
         <section class="progreso">
@@ -168,7 +192,7 @@
         async function actualizarProgreso() {
             const datos = await leerProgreso();
             const completados = contarModulosCompletados(datos);
-            const total = 1; // Cambiar este número a medida que agregues módulos
+            const total = 1; 
             const porcentaje = Math.round((completados / total) * 100);
 
             const barra = document.getElementById('barraRelleno');
